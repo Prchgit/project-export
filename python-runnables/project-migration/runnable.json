@@ -1,6 +1,9 @@
+
+
+
 {
     "meta" : {
-        "label" : "Project Export Macro",
+        "label" : "Bulk Connection Migration",
         "description" : "This Macro is used to migrate connection settings for all datasets in a project sharing same source connection",
         "icon" : "icon-upload-alt"
     },
@@ -10,17 +13,7 @@
     "resultType" : "HTML",
     "resultLabel" : "The output",
 
-    /* params:
-    DSS will generate a formular from this list of requested parameters.
-    Your component code can then access the value provided by users using the "name" field of each parameter.
-
-    Available parameter types include:
-    STRING, INT, DOUBLE, BOOLEAN, DATE, SELECT, TEXTAREA, DATASET, DATASET_COLUMN, MANAGED_FOLDER, PRESET and others.
-
-    For the full list and for more details, see the documentation: https://doc.dataiku.com/dss/latest/plugins/reference/params.html
-    */
     "params": [
-        "params": [
         {
             "name": "Target_Instance",
             "label" : "Target Instance",
@@ -53,8 +46,6 @@
                     "label": "display name for val_y"
                 }
             ]
-        }
+        } 
     ]
 }
-
-
