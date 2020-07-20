@@ -32,15 +32,19 @@
         {
             "name": "Export_Options",
             "label": "Export Options",
-            "type": "SELECT",
+            "type": "MULTISELECT",
             "selectChoices": [
                 {
-                    "value": "val_x",
-                    "label": "display name for val_x"
+                    "value": "export all datasets",
+                    "label": "export all datasets"
                 },
                 {
-                    "value": "val_y",
-                    "label": "display name for val_y"
+                    "value": "export input datasets",
+                    "label": "export input datasets"
+                },
+                {
+                    "value": "export analysis models",
+                    "label": "export analysis models"
                 }
             ]
         } 
