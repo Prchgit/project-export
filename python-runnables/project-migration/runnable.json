@@ -1,10 +1,7 @@
-
-
-
 {
     "meta" : {
-        "label" : "Bulk Connection Migration",
-        "description" : "This Macro is used to migrate connection settings for all datasets in a project sharing same source connection",
+        "label" : "Project export Macro",
+        "description" : "Macro to export project setting/data to target instance",
         "icon" : "icon-upload-alt"
     },
 
