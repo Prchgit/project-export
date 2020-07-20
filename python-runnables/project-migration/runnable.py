@@ -23,7 +23,7 @@ class MyRunnable(Runnable):
 
     def run(self, progress_callback):
         """
-        s=self.config.get('Export_Options')
+        s = print(self.config.get('Export_Options'))
         
         
         Do stuff here. Can return a string or raise an exception.
