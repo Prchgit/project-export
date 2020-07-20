@@ -23,11 +23,11 @@ class MyRunnable(Runnable):
 
     def run(self, progress_callback):
         """
-        self.config.get('Export_Options')
+        s=self.config.get('Export_Options')
         
         
         Do stuff here. Can return a string or raise an exception.
         The progress_callback is a function expecting 1 value: current progress
         """
-        return()
+        return(s)
         
