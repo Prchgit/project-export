@@ -1,6 +1,6 @@
 {
     "meta" : {
-        "label" : "Bulk Connection Migration",
+        "label" : "Project Export Macro",
         "description" : "This Macro is used to migrate connection settings for all datasets in a project sharing same source connection",
         "icon" : "icon-upload-alt"
     },
@@ -41,7 +41,7 @@
         /* A "SELECT" parameter is a multi-choice selector. Choices are specified using the selectChoice field*/
         {
             "name": "Export_Options",
-            "label": "Export Options
+            "label": "Export Options",
             "type": "SELECT",
             "selectChoices": [
                 {
