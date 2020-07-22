@@ -23,12 +23,10 @@ class MyRunnable(Runnable):
 
     def run(self, progress_callback):
         """
-        s = self.config.get('Export_Options')
-        #var = s['export_all_datasets']
-        return(type(s))
-        
         Do stuff here. Can return a string or raise an exception.
         The progress_callback is a function expecting 1 value: current progress
         """
-        
+        s = self.config.get('Export_Options')
+        #var = s['export_all_datasets']
+        return(type(s))
         
