@@ -32,7 +32,7 @@ class MyRunnable(Runnable):
         
         dict = {'exportAnalysisModels':'true' if export_all_datasets in export_options ,
                 'exportSavedModels':'true',
-                'exportAllInputDatasets':'true'}
+                'exportAllInputDatasets':'true' if export_input_datasets in export_options }
                 
         #var = s['export_all_datasets']
         return(s[0])
