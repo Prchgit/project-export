@@ -28,5 +28,5 @@ class MyRunnable(Runnable):
         """
         s = self.config.get('Export_Options')
         #var = s['export_all_datasets']
-        return(type(s))
+        return(s)
         
