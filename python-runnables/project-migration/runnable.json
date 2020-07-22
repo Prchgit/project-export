@@ -35,7 +35,7 @@
             "type": "MULTISELECT",
             "selectChoices": [
                 {
-                    "value": "export all datasets",
+                    "value": "export_all_datasets",
                     "label": "export all datasets"
                 },
                 {
