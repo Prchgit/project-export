@@ -39,11 +39,11 @@
                     "label": "export all datasets"
                 },
                 {
-                    "value": "export input datasets",
+                    "value": "export_input_datasets",
                     "label": "export input datasets"
                 },
                 {
-                    "value": "export analysis models",
+                    "value": "export_analysis_models",
                     "label": "export analysis models"
                 }
             ]

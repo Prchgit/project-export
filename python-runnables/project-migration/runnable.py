@@ -26,7 +26,14 @@ class MyRunnable(Runnable):
         Do stuff here. Can return a string or raise an exception.
         The progress_callback is a function expecting 1 value: current progress
         """
-        s = self.config.get('Export_Options')
+        export_options = self.config.get('Export_Options')
+        remote_host = self.config.get('Target_Instance')
+        rapi_key = self.config.get('Target_apikey')
+        
+        dict = {'exportAnalysisModels':'true' if export_all_datasets in export_options ,
+                'exportSavedModels':'true',
+                'exportAllInputDatasets':'true'}
+                
         #var = s['export_all_datasets']
         return(s[0])
         
