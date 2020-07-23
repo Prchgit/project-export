@@ -26,11 +26,16 @@ class MyRunnable(Runnable):
         Do stuff here. Can return a string or raise an exception.
         The progress_callback is a function expecting 1 value: current progress
         """
-        
+        #Initialise local project
         project = self.client.get_project(self.project_key)
         export_options = self.config.get('Export_Options')
+        
+        #Initialise remote client
         remote_host = self.config.get('Target_Instance')
-        rapi_key = self.config.get('Target_apikey')
+        rapi_key = self.config.get('Target_apikey')        
+        remote_client = dataikuapi.DSSClient(remote_host, rapi_key)
+        
+        #Initialise dictionary based on user inputs for export options
         
         dict = {'exportAnalysisModels':('true' if 'export_analysis_models' in export_options else 'false'),
                 'exportSavedModels':('true'if 'export_saved_models' in export_options else 'false'),
