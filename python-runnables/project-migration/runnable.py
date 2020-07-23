@@ -30,9 +30,9 @@ class MyRunnable(Runnable):
         remote_host = self.config.get('Target_Instance')
         rapi_key = self.config.get('Target_apikey')
         
-        dict = {'exportAnalysisModels':'true' if export_all_datasets in export_options ,
+        dict = {'exportAnalysisModels':('true' if export_all_datasets in export_options else 'false'),
                 'exportSavedModels':'true',
-                'exportAllInputDatasets':'true' if export_input_datasets in export_options }
+                'exportAllInputDatasets':('true' if export_input_datasets in export_options else 'false') }
                 
         #var = s['export_all_datasets']
         return(s[0])
