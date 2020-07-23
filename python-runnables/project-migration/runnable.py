@@ -38,10 +38,10 @@ class MyRunnable(Runnable):
         remote_host = self.config.get('Target_Instance')
         rapi_key = self.config.get('Target_apikey')        
         
-        try:
-            remote_client = dataikuapi.DSSClient(remote_host, rapi_key)
-        except:
-            raise Exception("Incorrect URL/API key")
+        #try:
+        remote_client = dataikuapi.DSSClient(remote_host, rapi_key)
+        #except:
+            #raise Exception("Incorrect URL/API key")
         
         #Initialise dictionary based on user inputs for export options
         
