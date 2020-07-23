@@ -63,5 +63,5 @@ class MyRunnable(Runnable):
             raise Exception("Exception encountered while project export/import")
             
             
-        return(dict.items())
+        return("Project Successfully exported to target instance")
     
