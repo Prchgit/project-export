@@ -37,7 +37,7 @@ class MyRunnable(Runnable):
         #Initialise remote client
         remote_host = self.config.get('Target_Instance')
         rapi_key = self.config.get('Target_apikey')        
-        
+
         
         remote_client = dataikuapi.DSSClient(remote_host, rapi_key)
         
@@ -55,10 +55,6 @@ class MyRunnable(Runnable):
         with project.get_export_stream(dict) as s: 
                 handle = remote_client.prepare_project_import(s)
                 handle.execute()
-            
-        #except:
-            #raise Exception("Exception encountered while project export/import")
-            
-            
+         
         return("Project Successfully exported to target instance")
     
