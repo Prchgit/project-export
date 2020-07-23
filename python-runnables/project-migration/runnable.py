@@ -1,5 +1,6 @@
 # This file is the actual code for the Python runnable project-migration
 from dataiku.runnables import Runnable
+import dataikuapi
 
 class MyRunnable(Runnable):
     """The base interface for a Python runnable"""
