@@ -11,7 +11,7 @@
         "label": "Project migration",
 
         // description: longer string to help end users understand what this plugin does
-        "description": "",
+        "description": "Plugin to automate project export/import between two DSS intances.",
 
         "author": "Prashant",
 
