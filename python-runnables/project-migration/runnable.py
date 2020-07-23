@@ -41,5 +41,5 @@ class MyRunnable(Runnable):
                }
         
         
-        return(dict['exportAnalysisModels'])
+        return(dict.items())
     
