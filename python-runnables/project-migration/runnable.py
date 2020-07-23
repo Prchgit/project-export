@@ -31,10 +31,29 @@ class MyRunnable(Runnable):
         rapi_key = self.config.get('Target_apikey')
         
         dict = {'exportAnalysisModels':('true' if 'export_analysis_models' in export_options else 'false'),
-                'exportSavedModels':'true',
-                'exportAllInputDatasets': 'false' }
+                'exportSavedModels':('true'if 'export_saved_models' in export_options else 'false'),
+                'exportAllInputDatasets':('true'if 'export_input_datasets' in export_options else 'false'),
+                'exportUploads': ('true'if 'export_uploads' in export_options else 'false'),
+                'exportAllDatasets': ('true'if 'export_all_datasets' in export_options else 'false'),
+                'exportManagedFS': ('true'if 'export_managed_fs' in export_options else 'false'),
+                'exportManagedFolders':('true'if 'export_managed_folders' in export_options else 'false'),
+                'exportAllInputManagedFolders':('true'if 'export_all_input_managed_folders' in export_options else 'false')                
+               }
         #('true' if export_input_datasets in export_options else 'false')        
         #var = s['']
         
         return(dict['exportAnalysisModels'])
-        
+    
+    	options (dict) –
+Dictionary of export options (defaults to {}). The following options are available:
+
+exportUploads (boolean): Exports the data of Uploaded datasets - default False
+exportManagedFS (boolean): Exports the data of managed Filesystem datasets - default False
+exportAnalysisModels (boolean): Exports the models trained in analysis - default False
+exportSavedModels (boolean): Exports the models trained in saved models - default False
+exportManagedFolders (boolean): Exports the data of managed folders - default False
+exportAllInputDatasets (boolean): Exports the data of all input datasets - default False
+exportAllDatasets (boolean): Exports the data of all datasets - default False
+exportAllInputManagedFolders (boolean): Exports the data of all input managed folders - default False
+exportGitRepositoy (boolean): Exports the Git repository history - default False
+exportInsightsData (boolean): Exports the data of static insights - default False

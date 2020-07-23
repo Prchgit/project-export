@@ -36,15 +36,35 @@
             "selectChoices": [
                 {
                     "value": "export_all_datasets",
-                    "label": "export all datasets"
+                    "label": "Export all datasets"
                 },
                 {
                     "value": "export_input_datasets",
-                    "label": "export input datasets"
+                    "label": "Export all input datasets"
                 },
                 {
                     "value": "export_analysis_models",
-                    "label": "export analysis models"
+                    "label": "Export analysis models"
+                },
+                {
+                    "value": "export_uploads",
+                    "label": "Export uploads"
+                },
+                {
+                    "value": "export_managed_fs",
+                    "label": "Export managed FS"
+                },
+                {
+                    "value": "export_all_input_managed_folders",
+                    "label": "Export all input managed folders"
+                },
+                {
+                    "value": "export_managed_folders",
+                    "label": "Export managed folders"
+                },
+                {
+                    "value": "export_saved_models",
+                    "label": "Export saved models"
                 }
             ]
         } 
