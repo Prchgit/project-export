@@ -35,5 +35,5 @@ class MyRunnable(Runnable):
                 'exportAllInputDatasets':('true' if export_input_datasets in export_options else 'false') }
                 
         #var = s['export_all_datasets']
-        return(s[0])
+        return(dict)
         
